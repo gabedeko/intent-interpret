@@ -1,0 +1,145 @@
+@font-face {
+	font-family: 'FivoSans-Heavy-Oblique';
+	src: url('../fonts/FivoSans-Heavy-Oblique.woff2') format('woff2');
+	src: url('../fonts/FivoSans-Heavy-Oblique.eot'),
+        url('../fonts/FivoSans-Heavy-Oblique.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+	font-family: 'FivoSans-Heavy';
+	src: url('../fonts/FivoSans-Heavy.woff2') format('woff2');
+	src: url('../fonts/FivoSans-Heavy.eot'),
+        url('../fonts/FivoSans-Heavy.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+	font-family: 'FivoSans-Light-Oblique';
+	src: url('../fonts/FivoSans-Light-Oblique.woff2') format('woff2');
+	src: url('../fonts/FivoSans-Light-Oblique.eot'),
+        url('../fonts/FivoSans-Light-Oblique.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+	font-family: 'FivoSans-Light';
+	src: url('../fonts/FivoSans-Light.woff2') format('woff2');
+	src: url('../fonts/FivoSans-Light.eot'),
+        url('../fonts/FivoSans-Light.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+	font-family: 'FivoSans-Medium-Oblique';
+	src: url('../fonts/FivoSans-Medium-Oblique.woff2') format('woff2');
+	src: url('../fonts/FivoSans-Medium-Oblique.eot'),
+        url('../fonts/FivoSans-Medium-Oblique.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+	font-family: 'FivoSans-Medium';
+	src: url('../fonts/FivoSans-Medium.woff2') format('woff2');
+	src: url('../fonts/FivoSans-Medium.eot'),
+        url('../fonts/FivoSans-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
+body, p, a, ol, ul, li, caption, div {
+	font-family: 'FivoSans-Medium';
+	//color: $bd-tan;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'FivoSans-Medium';
+	//color: $bd-tan;
+	text-transform: none;
+	font-weight: 900;
+}
+
+a {
+	text-decoration: none;
+	//color: $bd-tan;
+	&:hover {
+		//color: $bd-yellow;
+	}
+}
+
+.title-tags {
+	margin-top:160px;
+	margin-bottom:160px;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 48px;
+	@media (min-width: 768px) { 
+	font-size: 60px;
+	line-height: 65px;
+	}
+	//color: $gabe-red;
+	letter-spacing: -0.5px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 24px;
+	@media (min-width: 768px) { 
+	font-size: 40px;
+	}
+	letter-spacing: -0.09px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 20px;
+	@media (min-width: 768px) { 
+	font-size: 32px;
+	}
+	letter-spacing: 0;
+}
+
+h4 {
+	font-size: 18px;
+	@media (min-width: 768px) { 
+	font-size: 22px;
+	}
+	letter-spacing: 0;
+}
+
+h5 {
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	padding: 5px 9px;
+}
+
+
+h6 {
+	font-size: 16px;
+	letter-spacing: 0.5px;
+}
+
+.body-1, .body-1 p {
+	font-family: 'FivoSans-Medium';
+	font-weight: 300;
+	font-size: 38px;
+	letter-spacing: -0.09px;
+	line-height: 1.3em;	
+	@media (max-width: 767.98px) { 
+		font-size: 24px;
+	}
+}
+
+.body-2, .body-2 p {
+	font-family: 'FivoSans-Medium';
+	font-size: 24px;
+	letter-spacing: -0.09px;
+	@media (max-width: 767.98px) { 
+		font-size: 20px;
+	}
+}
+
+.body-3, .body-3 p {
+	font-family: 'FivoSans-Medium';
+	font-size: 16px;
+}
+
+
+.caption {
+	font-size:16px;
+}
