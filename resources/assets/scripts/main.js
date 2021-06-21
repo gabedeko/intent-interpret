@@ -2,6 +2,9 @@
 import 'jquery';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
+import { gsap } from 'gsap/dist/gsap.min.js';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger.min.js';
+
 // Import everything from autoload
 import './autoload/**/*'
 
@@ -20,6 +23,8 @@ const routes = new Router({
   // About Us page, note the change from about-us to aboutUs.
   aboutUs,
 });
+
+gsap.registerPlugin(ScrollTrigger);
 
 // Load Events
 jQuery(document).ready(() => routes.loadEvents());

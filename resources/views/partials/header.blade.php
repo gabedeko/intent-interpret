@@ -1,31 +1,23 @@
 <header class="banner">
-  <div class="container-fluid">
+  <div class="container">
     <a class="brand" href="{{ home_url('/') }}">{{-- get_bloginfo('name', 'display') --}}</a>
-    <nav class="nav-primary navbar navbar-expand-lg navbar-light bg-light" >
+
+    <nav class="navbar navbar-expand-lg justify-content-between">
       <?php /* @if (has_nav_menu('primary_navigation'))
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
       @endif
       */ ?>
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Intentional Interpreting</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="hamburger" role="navigation">
-            <div id="menuToggle">
-              <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-            <ul id="menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Info</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
+      <a class="navbar-brand" href="#">Intentional Interpreting</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">About</a>
+          <a class="nav-item nav-link" href="#">Info</a>
+          <a class="nav-item nav-link disabled" href="#">Contact</a>
         </div>
-    </nav>
       </div>
     </nav>
   </div>

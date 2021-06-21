@@ -1,12 +1,53 @@
+.landing-container {
+    height: 72vh;
+    .row {
+        height: 100%;
+        .landing-col {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+        }
+    }
+}
+
 .home-img-container {
     height: 100vh;
     .row {
         height:100%;
-        .col {
+        .home-img-col {
             height: 100%;
             background-size: cover;
             background-position: 50% 50%;
             background-repeat: no-repeat;
+        }
+    }
+}
+
+.about-container {
+    
+    .about-row-1 {
+        height: 64vh;
+        display: flex;
+        align-items: center;
+    }
+    .about-row-2 {
+        div .exp-title {
+            font-size: 100px;
+            line-height: 80px;
+        }
+    }
+}
+
+.exp-container {
+    
+    .row {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .exp-num {
+            align-self: flex-start;
         }
     }
 }
