@@ -6,18 +6,22 @@
 
 <div class="container-fluid landing-container">
   <div class="row justify-content-md-center">
-    <div class="col-md-4 landing-col">
-        <h1 class="">Providing quality ASL-English interpretation services in the DC metro area</h1>
+    <div class="col landing-col">
+      <video src="@asset('images/videos/bridge.mp4')" type="video/mp4" data-autoplay loop class="landing-video" muted plays-inline autoplay>
+      </video>
+      <h1 class="landing-msg">Providing quality ASL-English interpretation services in the DC metro area</h1>
     </div>
   </div>
 </div>
 
+<?php /*
 <div class="container-fluid home-img-container">
   <div class="row justify-content-md-center">
     <div class="col-md-12 home-img-col" style="background-image:url('https://via.placeholder.com/250')">
     </div>
   </div>
 </div>
+*/ ?>
 
 <div class="container-fluid about-container">
   <div class="row about-row-1">
@@ -62,6 +66,15 @@
       <button type="button" class="btn btn-primary">More Info</button>
     </div>
   </div>
+</div>
+
+<div class="container-fluid parallax-container">
+  <div class="bg"></div>
+  <h1>Simple parallax sections</h1>
+</div>
+<div class="container-fluid parallax-container">
+  <div class="bg"></div>
+  <h1>Hey look, a title</h1>
 </div>
 
 

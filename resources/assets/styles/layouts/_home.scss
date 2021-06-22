@@ -6,7 +6,16 @@
             height: 100%;
             display: flex;
             align-items: center;
-
+            .landing-video {
+                height: 100%;
+            }
+            .landing-msg {
+                color: #fff;
+                position: absolute;
+                width: 50%;
+                margin: 0 auto;
+                left: 25%;
+            }
         }
     }
 }

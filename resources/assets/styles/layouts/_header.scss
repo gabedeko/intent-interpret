@@ -6,6 +6,9 @@
   @extend .nav-link;
 }
 
+.nav-container {
+  position: absolute;
+}
 
 .navbar-collapse {
   justify-content: flex-end;
