@@ -49,7 +49,6 @@ gsap.utils.toArray('.parallax-container').forEach((section, i) => {
       },
     });
   } 
-  
   // the first image should be positioned against the top. Use px on the animating part to work with GSAP. 
   else {
     section.bg.style.backgroundPosition = '50% 0px'; 
@@ -66,3 +65,16 @@ gsap.utils.toArray('.parallax-container').forEach((section, i) => {
     });
   }
 });
+
+
+gsap.utils.toArray('.fadeIn').forEach((box) => {
+  const anim = gsap.fromTo(box, {autoAlpha: 0, y: 50}, {duration: 1, autoAlpha: 1, y: 0});
+  ScrollTrigger.create({
+    trigger: box,
+    animation: anim,
+    toggleActions: 'play none none none',
+    once: true,
+  });
+});
+
+

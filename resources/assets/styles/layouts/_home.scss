@@ -1,5 +1,5 @@
 .landing-container {
-    height: 72vh;
+    height: 100vh;
     .row {
         height: 100%;
         .landing-col {
@@ -8,6 +8,7 @@
             align-items: center;
             .landing-video {
                 height: 100%;
+                width: 100%;
             }
             .landing-msg {
                 color: #fff;
@@ -39,6 +40,16 @@
         height: 64vh;
         display: flex;
         align-items: center;
+        .about-col-1 {
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            hr {
+                border: 1px solid #000;
+                width: 100%;
+            }
+        }
     }
     .about-row-2 {
         div .exp-title {
@@ -58,5 +69,17 @@
         .exp-num {
             align-self: flex-start;
         }
+    }
+}
+
+.process-container {
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .process-row-1 {
+        border-bottom: 1px solid #fff;
     }
 }
