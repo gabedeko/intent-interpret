@@ -1,11 +1,17 @@
 .landing-container {
     height: 100vh;
-    .row {
+    padding-right: 0;
+    padding-left: 0;
+    overflow: hidden;
+    .landing-row {
         height: 100%;
+        margin-top:-8px;
         .landing-col {
             height: 100%;
             display: flex;
             align-items: center;
+            padding-left: 0;
+            padding-right: 0;
             .landing-video {
                 height: 100%;
                 width: 100%;
@@ -16,6 +22,9 @@
                 width: 50%;
                 margin: 0 auto;
                 left: 25%;
+                @media (min-width: 992px) {
+                    line-height: 80px;
+                }
             }
         }
     }
@@ -37,9 +46,11 @@
 .about-container {
     
     .about-row-1 {
-        height: 64vh;
+        min-height: 80vh;
         display: flex;
-        align-items: center;
+        .about-title {
+            align-self: center;
+        }
         .about-col-1 {
             height: 80%;
             display: flex;
@@ -52,12 +63,47 @@
         }
     }
     .about-row-2 {
-        div .exp-title {
+        .about-row-2-left .exp-title {
             font-size: 100px;
             line-height: 80px;
         }
+        .about-row-2-right {
+            svg {
+                animation: nudge 3s linear infinite alternate;
+            }
+        }
     }
 }
+
+.parallax-container {
+    position: relative;
+    height: 100vh;
+    padding-right: 0;
+    padding-left: 0;
+    .parallax-row {
+      height:100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-right: 0;
+      margin-left: 0;
+      background-color: rgba(0,0,0,0.4);
+      justify-content: space-around;
+      color: #fff;
+      padding: 24px;
+    }
+  }
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
 .exp-container {
     
@@ -72,6 +118,34 @@
     }
 }
 
+.community-container {
+    height: 100vh;
+    .community-row {
+        height: 100%;
+        .community-left {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .community-left-btm {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .community-right {
+            height: 100%;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            transition: background-size ease-in-out .3s;
+            &:hover {
+                background-size: calc(cover + 16px);
+                transition: background-size ease-in-out .3s;
+            }
+        }
+    }
+}
+
 .process-container {
     background-color: #000;
     color: #fff;
@@ -81,5 +155,44 @@
     justify-content: space-evenly;
     .process-row-1 {
         border-bottom: 1px solid #fff;
+        padding: 16px 0;
+        margin: 16px 0;
+    }
+    .process-row-2 {
+        .col {
+            .process-row-header {
+                @media (min-width: 992px) {
+                    font-size: 92px;
+                }
+            }
+        }
+    }
+}
+
+.contact-container {
+    height: 96vh;
+    
+    .contact-row {
+        height: 100%;
+        .contact-left {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .contact-left-top {
+
+            }
+            .contact-left-btm {
+                @media (min-width: 992px) {
+                    font-size: 92px;
+                }
+            }
+        }
+        .contact-right {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
     }
 }

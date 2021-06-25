@@ -68,7 +68,7 @@ gsap.utils.toArray('.parallax-container').forEach((section, i) => {
 
 
 gsap.utils.toArray('.fadeIn').forEach((box) => {
-  const anim = gsap.fromTo(box, {autoAlpha: 0, y: 50}, {duration: 1, autoAlpha: 1, y: 0});
+  const anim = gsap.fromTo(box, {autoAlpha: 0, y: 100}, {duration: 1, autoAlpha: 1, y: 0});
   ScrollTrigger.create({
     trigger: box,
     animation: anim,
