@@ -49,14 +49,14 @@
             <h3>Professionalism</h3>
             <hr>
             <p>We abide by the Registry of Interpreters for the Deaf’s (RID) Code of Professional Conduct (CPC). There is an expanded version of the CPC, however, it has also been truncated.</p>
-            <ol class="list-group list-group-numbered">
-              <li class="list-group-item">Interpreters adhere to standards of confidential communication.</li>
-              <li class="list-group-item"> Interpreters possess the professional skills and knowledge required for the specific interpreting situation.</li>
-              <li class="list-group-item">Interpreters conduct themselves in a manner appropriate to the specific interpreting situation.</li>
-              <li class="list-group-item">Interpreters demonstrate respect for consumers.</li>
-              <li class="list-group-item">Interpreters demonstrate respect for colleagues, interns, and students of the profession.</li>
-              <li class="list-group-item">Interpreters maintain ethical business practices.</li>
-              <li class="list-group-item">Interpreters engage in professional development.</li>
+            <ol class="list-group list-group-flush">
+              <li class="list-group-item">1. Interpreters adhere to standards of confidential communication.</li>
+              <li class="list-group-item">2. Interpreters possess the professional skills and knowledge required for the specific interpreting situation.</li>
+              <li class="list-group-item">3. Interpreters conduct themselves in a manner appropriate to the specific interpreting situation.</li>
+              <li class="list-group-item">4. Interpreters demonstrate respect for consumers.</li>
+              <li class="list-group-item">5. Interpreters demonstrate respect for colleagues, interns, and students of the profession.</li>
+              <li class="list-group-item">6. Interpreters maintain ethical business practices.</li>
+              <li class="list-group-item">7. Interpreters engage in professional development.</li>
             </ol>
     </div>
   </div>
@@ -73,39 +73,41 @@
   </div>
 </div>
 
-<div class="container-fluid parallax-container">
-  <div class="bg"></div>
-  <div class="row parallax-row">
+<div class="container-fluid parallax-container" id="organization">
+  <div class="bg" style="background-image:url(@asset('images/0.jpg'))"></div>
+  <div class="row parallax-row p-3">
     <div class="exp-num fadeIn">01</div>
     <div class="exp-desc fadeIn">
       <h2>Reality of ASL Interpreting - PoC</h2>
       <p>Antonio founded this Facebook group in 2018 and it has been thriving ever since! It currently has 1K+ members nationally and is still growing. This group focuses on bringing people of color together in the interpreting and Deaf communities for empowerment and resources.</p>
-      <button type="button" class="btn btn-primary">More Info</button>
+      <button type="button" class="btn btn-light">More Info</button>
     </div>
   </div>
 </div>
 <div class="container-fluid parallax-container">
-  <div class="bg"></div>
-  <div class="row parallax-row">
+  <div class="bg" style="background-image:url(@asset('images/1.jpg'))"></div>
+  <div class="row parallax-row p-3">
     <div class="exp-num fadeIn">03</div>
     <div class="exp-desc fadeIn">
       <h2>SOUTHERN MARYLAND ASL CONNECTION</h2>
       <p>This endeavor was the first of its kind. It brought together people in the D.C. metropolitan area who were interested in sign language. While it was a successful, it was only a pilot. Stay tuned for updates because it may be making a return.</p>
-      <button type="button" class="btn btn-primary">More Info</button>
+      <button type="button" class="btn btn-light">More Info</button>
     </div>
   </div>
 </div>
 <div class="container-fluid community-container">
   <div class="row community-row">
-    <div class="col-md-6 community-left">
+    <div class="col-md-6 community-left p-3">
       <h5>03</h5>
       <h1>COMMUNITY INVOLVEMENT</h1>
-      <div class="community-left-btm">
+      <a href="#" class="community-left-btm">
         <h5>Website</h5>
-        <button></button>
-      </div>
+        <svg width="64" height="64" viewBox="0 0 672 472" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M662.627 258.627C675.124 246.131 675.124 225.869 662.627 213.373L458.981 9.72601C446.484 -2.77099 426.223 -2.77099 413.726 9.72601C401.229 22.223 401.229 42.484 413.726 54.981L594.745 236L413.726 417.019C401.229 429.516 401.229 449.777 413.726 462.274C426.223 474.771 446.484 474.771 458.981 462.274L662.627 258.627ZM0 268H640V204L0 204L0 268Z" fill="black"/>
+        </svg>
+      </a>
     </div>
-    <div class="col-md-6 community-right" style="background-image:url('https://via.placeholder.com/250')"></div>
+    <div class="col-md-6 community-right" style="background-image:url(@asset('images/2.jpg'))"></div>
   </div>
 </div>
 
@@ -145,22 +147,27 @@
   </div>
 </div>
 
-<div class="container-fluid contact-container">
+<div class="container-fluid contact-container" id="contact">
   <div class="row contact-row">
-    <div class="col-md-9 contact-left">
+    <div class="col-md-8 contact-left">
       <h5 class="pt-5 contact-left-top">Book an appointment for free!</h5>
       <h1 class="contact-left-btm">Let's Communicate</h1>
     </div>
-    <div class="col-md-3 contact-right">
+    <div class="col-md-4 contact-right">
       <div class="contact-right-top">
         <h2>Contact</h2>
         <p>For work inquiries feel free to get in touch with me</p>
+        <?php
+        gravity_form( 1, false, false, false, '', false );
+        ?>
       </div>
       <div class="contact-right-btm">
         <h2>Social</h2>
-        <p>Facebook</p>
-        <p>Twitter</p>
-        <p>Instagram</p>
+        <div class="social-links">
+          <p>Facebook</p>
+          <p>Twitter</p>
+          <p>Instagram</p>
+        </div>
       </div>
     </div>
   </div>

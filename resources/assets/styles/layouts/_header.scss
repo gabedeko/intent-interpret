@@ -11,6 +11,24 @@
   z-index: 9999;
 }
 
+.navbar {
+  .navbar-brand {
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.navbar-nav {
+  .nav-item {
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
 .navbar-collapse {
   justify-content: flex-end;
 }

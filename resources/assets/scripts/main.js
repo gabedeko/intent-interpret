@@ -34,7 +34,7 @@ gsap.utils.toArray('.parallax-container').forEach((section, i) => {
   section.bg = section.querySelector('.bg'); 
 
   // Give the backgrounds some random images
-  section.bg.style.backgroundImage = `url(https://picsum.photos/${innerWidth}/${innerHeight}?random=${i})`;
+  //section.bg.style.backgroundImage = `url(https://picsum.photos/${innerWidth}/${innerHeight}?random=${i})`;
 
   // Do the parallax effect on each section
   if (i) {
@@ -68,7 +68,7 @@ gsap.utils.toArray('.parallax-container').forEach((section, i) => {
 
 
 gsap.utils.toArray('.fadeIn').forEach((box) => {
-  const anim = gsap.fromTo(box, {autoAlpha: 0, y: 100}, {duration: 1, autoAlpha: 1, y: 0});
+  const anim = gsap.fromTo(box, {autoAlpha: 0, y: 100}, {duration: .3, autoAlpha: 1, y: 0});
   ScrollTrigger.create({
     trigger: box,
     animation: anim,
