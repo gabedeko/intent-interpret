@@ -5,7 +5,7 @@
     overflow: hidden;
     .landing-row {
         height: 100%;
-        margin-top:-8px;
+        //margin-top:-8px;
         .landing-col {
             height: 100%;
             display: flex;
@@ -15,6 +15,7 @@
             .landing-video {
                 height: 100%;
                 width: 100%;
+                object-fit: fill;
             }
             .landing-msg {
                 color: #fff;
@@ -23,7 +24,12 @@
                 margin: 0 auto;
                 left: 25%;
                 @media (min-width: 992px) {
+                    line-height: 120px;
+                }
+                @media (max-width: 991.98px) {
                     line-height: 80px;
+                    width: 80%;
+                    left: 8%;
                 }
             }
         }
@@ -66,15 +72,38 @@
         .about-row-2-left .exp-title {
             font-size: 100px;
             line-height: 80px;
+            @media (max-width: 767.98px) {
+                font-size: 32px;
+            }
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                font-size: 64px;
+            }
+
         }
         .about-row-2-right {
             display: flex;
             flex-direction: column;
             align-content: flex-end;
             justify-content: center;
-            svg {
+
+            .about-row-2-arrow-lg {
                 animation: nudge 3s linear infinite alternate;
+                @media (max-width: 767.98px) {
+                    display: none;
+                }
             }
+            .about-row-2-arrow-sm {
+                animation: nudge-sm 3s linear infinite alternate;
+                @media (min-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            background-color: #000;
+            color: #fff;
+            padding-bottom: 40px;
         }
     }
 }
@@ -131,6 +160,12 @@
     height: 100vh;
     .community-row {
         height: 100%;
+        @media (max-width: 991.98px) {
+            background-image: url(../../images/2.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
         .community-left {
             height: 100%;
             display: flex;
@@ -162,6 +197,14 @@
             h1, h2, h3, h4, h5 {
                 padding: 0;
             }
+            h1 {
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    font-size: 40px;
+                }
+            }
+            @media (max-width: 991.98px) {
+                background-color: rgba(255,255,255,.6);
+            }
         }
         .community-right {
             height: 100%;
@@ -172,6 +215,9 @@
             &:hover {
                 background-size: calc(cover + 16px);
                 transition: background-size ease-in-out .3s;
+            }
+            @media (max-width: 991.98px) {
+                display: none;
             }
         }
     }
@@ -203,7 +249,9 @@
 .contact-container {
     height: 100vh;
     min-height: 100vh;
-    
+    @media (max-width: 991.89px) {
+        height: auto;
+    }
     .contact-row {
         height: 100%;
         .contact-left {

@@ -1,8 +1,16 @@
 <header class="banner">
-  <div class="container-fluid nav-container">
+  <div class="container-fluid nav-container 
+  <?php
+  if ( is_home() ) {
+      ?>
+      home-nav-container
+      <?php
+  }
+  ?>
+  ">
     <a class="brand" href="{{ home_url('/') }}">{{-- get_bloginfo('name', 'display') --}}</a>
 
-    <nav class="navbar navbar-expand-lg justify-content-between">
+    <nav class="navbar navbar-expand-lg justify-content-between pl-0 pr-0">
       <?php /* @if (has_nav_menu('primary_navigation'))
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
       @endif
@@ -12,14 +20,30 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#experience">Experience</a>
-          <a class="nav-item nav-link" href="#organization">Organizations</a>
-          <a class="nav-item nav-link" href="#rates">Rates</a>
-          <a class="nav-item nav-link" href="#request">Request Services</a>
-          <a class="nav-item nav-link" href="#contact">Contact</a>
-        </div>
+        <ul class="navbar-nav
+        <?php
+        if ( is_home() ) {
+            ?>
+            home-navbar-nav
+            <?php
+        }
+        ?>
+        ">
+          <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#organization">Organizations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rates">Rates</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#request" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Request Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/notary-services">Notary Public Services</a>
+              <a class="dropdown-item" href="#">TV Streaming Service</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
       </div>
     </nav>
   </div>

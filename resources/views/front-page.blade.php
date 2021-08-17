@@ -25,10 +25,10 @@
 
 <div class="container-fluid about-container" id="experience">
   <div class="row about-row-1 mt-3 mb-3">
-    <div class="col about-title">
+    <div class="col-md-6 about-title">
         <h5>About</h5>
     </div>
-    <div class="col fadeIn about-col-1">
+    <div class="col-md-6 fadeIn about-col-1">
             <h3>Experience</h3>
             <hr>
             <p>As an interpreter, one gets the opportunity to work in a variety of settings and fields, such as business, legal, mental health, and so many more. Some notable settings we have serviced include:</p>
@@ -65,8 +65,11 @@
         <h1 class="exp-title">Organizations + Foundations + Community</h1>
       </div>
       <div class="col-md-2 about-row-2-right">
-      <svg width="120" height="120" viewBox="0 0 472 672" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="120" height="120" viewBox="0 0 472 672" fill="none" xmlns="http://www.w3.org/2000/svg" class="about-row-2-arrow-lg">
       <path d="M213.373 662.627C225.869 675.124 246.131 675.124 258.627 662.627L462.274 458.981C474.771 446.484 474.771 426.223 462.274 413.726C449.777 401.229 429.516 401.229 417.019 413.726L236 594.745L54.9807 413.726C42.4839 401.229 22.2226 401.229 9.72583 413.726C-2.77095 426.223 -2.77095 446.484 9.72583 458.981L213.373 662.627ZM204 0L204 640H268L268 0L204 0Z" fill="black"/>
+      </svg>
+      <svg width="32" height="32" viewBox="0 0 472 672" fill="none" xmlns="http://www.w3.org/2000/svg" class="about-row-2-arrow-sm">
+      <path d="M213.373 662.627C225.869 675.124 246.131 675.124 258.627 662.627L462.274 458.981C474.771 446.484 474.771 426.223 462.274 413.726C449.777 401.229 429.516 401.229 417.019 413.726L236 594.745L54.9807 413.726C42.4839 401.229 22.2226 401.229 9.72583 413.726C-2.77095 426.223 -2.77095 446.484 9.72583 458.981L213.373 662.627ZM204 0L204 640H268L268 0L204 0Z" fill="white"/>
       </svg>
 
       </div>
@@ -87,7 +90,7 @@
 <div class="container-fluid parallax-container">
   <div class="bg" style="background-image:url(@asset('images/1.jpg'))"></div>
   <div class="row parallax-row p-3">
-    <div class="exp-num fadeIn">03</div>
+    <div class="exp-num fadeIn">02</div>
     <div class="exp-desc fadeIn">
       <h2>SOUTHERN MARYLAND ASL CONNECTION</h2>
       <p>This endeavor was the first of its kind. It brought together people in the D.C. metropolitan area who were interested in sign language. While it was a successful, it was only a pilot. Stay tuned for updates because it may be making a return.</p>
@@ -108,12 +111,13 @@
       </a>
     </div>
     <div class="col-md-6 community-right" style="background-image:url(@asset('images/2.jpg'))"></div>
+    
   </div>
 </div>
 
 <div class="container-fluid process-container">
   <div class="row process-row-1 fadeIn">
-    <div class="col">
+    <div class="col p-0">
       <h4>Organizations</h4>
     </div>
   </div>
@@ -149,7 +153,7 @@
 
 <div class="container-fluid contact-container" id="contact">
   <div class="row contact-row">
-    <div class="col-md-8 contact-left">
+    <div class="col-md-7 contact-left">
       <h5 class="pt-5 contact-left-top">Book an appointment for free!</h5>
       <h1 class="contact-left-btm">Let's Communicate</h1>
     </div>
