@@ -7,9 +7,12 @@
 <div class="container-fluid landing-container">
   <div class="row landing-row justify-content-md-center">
     <div class="col landing-col">
-      <video src="@asset('images/videos/bridge.mp4')" type="video/mp4" data-autoplay loop class="landing-video" muted plays-inline autoplay>
+      <video src="@asset('images/videos/intent_interp_intro_video_test.mp4')" type="video/mp4" data-autoplay loop class="landing-video" muted plays-inline autoplay>
       </video>
-      <h1 class="landing-msg fadeIn">Providing quality ASL-English interpretation services in the DC metro area</h1>
+      <div class="landing-msg-container">
+        <h1 class="landing-msg fadeIn">Providing quality ASL-English interpretation services in the DC metro area</h1>  
+      </div>
+      
     </div>
   </div>
 </div>
@@ -23,7 +26,7 @@
 </div>
 */ ?>
 
-<div class="container-fluid about-container" id="experience">
+<div class="container about-container" id="experience">
   <div class="row about-row-1 mt-3 mb-3">
     <div class="col-md-6 about-title">
         <h5>About</h5>
@@ -60,6 +63,8 @@
             </ol>
     </div>
   </div>
+</div>
+<div class="container-fluid about-container">
   <div class="row about-row-2">
       <div class="col-md-10 about-row-2-left fadeIn">
         <h1 class="exp-title">Organizations + Foundations + Community</h1>

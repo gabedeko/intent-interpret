@@ -22,7 +22,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav
         <?php
-        if ( is_home() ) {
+        if ( is_front_page() ) {
             ?>
             home-navbar-nav
             <?php

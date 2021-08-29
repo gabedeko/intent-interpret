@@ -17,19 +17,28 @@
                 width: 100%;
                 object-fit: fill;
             }
-            .landing-msg {
-                color: #fff;
+            .landing-msg-container {
+                height: 100%;
+                width: 100%;
+                background-color: rgba(0,0,0,.2);
                 position: absolute;
-                width: 50%;
-                margin: 0 auto;
-                left: 25%;
-                @media (min-width: 992px) {
-                    line-height: 120px;
-                }
-                @media (max-width: 991.98px) {
-                    line-height: 80px;
-                    width: 80%;
-                    left: 8%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                .landing-msg {
+                    color: #fff;
+                    position: absolute;
+                    width: 50%;
+                    margin: 0 auto;
+                    left: 25%;
+                    @media (min-width: 992px) {
+                        line-height: 120px;
+                    }
+                    @media (max-width: 991.98px) {
+                        line-height: 80px;
+                        width: 80%;
+                        left: 8%;
+                    }
                 }
             }
         }
