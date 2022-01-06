@@ -6,39 +6,28 @@
     .landing-row {
         height: 100%;
         //margin-top:-8px;
-        .landing-col {
+        .landing-col-left {
             height: 100%;
-            display: flex;
-            align-items: center;
+            //display: flex;
+            //align-items: center;
             padding-left: 0;
             padding-right: 0;
             .landing-video {
                 height: 100%;
                 width: 100%;
-                object-fit: fill;
+                //object-fit: fill;
+                object-fit: cover;
             }
-            .landing-msg-container {
-                height: 100%;
-                width: 100%;
-                background-color: rgba(0,0,0,.2);
-                position: absolute;
+        }
+        .landing-col-right {
+            background-color: #000;
+            .landing-intro {
                 display: flex;
-                justify-content: center;
                 flex-direction: column;
-                .landing-msg {
+                justify-content: space-around;
+                height: 100%;
+                .landing-copy {
                     color: #fff;
-                    position: absolute;
-                    width: 50%;
-                    margin: 0 auto;
-                    left: 25%;
-                    @media (min-width: 992px) {
-                        line-height: 120px;
-                    }
-                    @media (max-width: 991.98px) {
-                        line-height: 80px;
-                        width: 80%;
-                        left: 8%;
-                    }
                 }
             }
         }
@@ -288,6 +277,23 @@
                     display: flex;
                     justify-content: space-around;
                 }
+            }
+        }
+    }
+}
+
+.testimonial-container {
+    height: 100vh;
+    background-color: #000;
+    .testimonial-row {
+        height: 100%;
+        .carousel  {
+            width: 100%;
+            .carousel-control-prev {
+
+            }
+            .carousel-control-next {
+
             }
         }
     }

@@ -1,7 +1,7 @@
 <header class="banner">
   <div class="container-fluid nav-container 
   <?php
-  if ( is_home() ) {
+  if ( is_front_page() ) {
       ?>
       home-nav-container
       <?php
@@ -15,6 +15,7 @@
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
       @endif
       */ ?>
+      <img class="header-logo" src="@asset('images/logo/intent_interp_logo.png')" alt="">
       <a class="navbar-brand" href="#">Intentional Interpreting</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

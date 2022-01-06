@@ -57,6 +57,15 @@
 
             </div>
         </div>
+        <div class="row mt-5 justify-content-end">
+            <div class="col-md-6">
+                <h1>Contact</h1>
+                <?php
+                gravity_form( 1, false, false, false, '', false );
+                ?>
+            </div>
+            
+        </div>
     </div>
 
   @endwhile

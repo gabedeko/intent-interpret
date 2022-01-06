@@ -5,14 +5,21 @@
 
 
 <div class="container-fluid landing-container">
-  <div class="row landing-row justify-content-md-center">
-    <div class="col landing-col">
+  <div class="row landing-row">
+    <div class="col-md-6 landing-col-left">
       <video src="@asset('images/videos/intent_interp_intro_video_test.mp4')" type="video/mp4" data-autoplay loop class="landing-video" muted plays-inline autoplay>
       </video>
-      <div class="landing-msg-container">
-        <h1 class="landing-msg fadeIn">Providing quality ASL-English interpretation services in the DC metro area</h1>  
+      <!--div class="landing-msg-container">
+        <h1 class="landing-msg fadeIn"></h1>  
+      </div-->
+    </div>
+    <div class="col-md-6 landing-col-right">
+      <div class="landing-intro mt-5 fadeIn">
+        <h2 class="landing-copy">Hello! I'm Antonio.</h2>
+        <h2 class="landing-copy">My sign name is 'A' across my mustache.</h2>
+        <h2 class="landing-copy">I primarily provide interpreting services but offer other services, too.</h2>
+        <h2 class="landing-copy">So, don't wait, hit me up. I look forward to working with you!</h2>
       </div>
-      
     </div>
   </div>
 </div>
@@ -32,7 +39,7 @@
         <h5>About</h5>
     </div>
     <div class="col-md-6 fadeIn about-col-1">
-            <h3>Experience</h3>
+            <!--h3>Experience</h3>
             <hr>
             <p>As an interpreter, one gets the opportunity to work in a variety of settings and fields, such as business, legal, mental health, and so many more. Some notable settings we have serviced include:</p>
             <ul class="list-group list-group-flush">
@@ -45,7 +52,8 @@
               <li class="list-group-item">Canvassing</li>
               <li class="list-group-item">Medical</li>
             </ul>
-            <p>We provide services in many more settings and are always willing to expand. For additional or unusual setting inquires, please contact me.</p>
+            <p>We provide services in many more settings and are always willing to expand. For additional or unusual setting inquires, please contact me.</p-->
+            <p>Providing quality ASL-English interpretation services in the DC metro area</p>
             
     </div>
     <div class="col fadeIn about-col-1">
@@ -108,8 +116,7 @@
     <div class="col-md-6 community-left p-3">
       <h5>03</h5>
       <h1>COMMUNITY INVOLVEMENT</h1>
-      <a href="#" class="community-left-btm">
-        <h5>Website</h5>
+        <h5><a class="community-btn" href="https://www.pcrid.org/" target="_blank">Website</a></h5> 
         <svg width="64" height="64" viewBox="0 0 672 472" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M662.627 258.627C675.124 246.131 675.124 225.869 662.627 213.373L458.981 9.72601C446.484 -2.77099 426.223 -2.77099 413.726 9.72601C401.229 22.223 401.229 42.484 413.726 54.981L594.745 236L413.726 417.019C401.229 429.516 401.229 449.777 413.726 462.274C426.223 474.771 446.484 474.771 458.981 462.274L662.627 258.627ZM0 268H640V204L0 204L0 268Z" fill="black"/>
         </svg>
@@ -155,7 +162,31 @@
     </div>
   </div>
 </div>
-
+<div class="container-fluid testimonial-container">
+  <div class="row testimonial-row">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="..." alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="..." alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="..." alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
 <div class="container-fluid contact-container" id="contact">
   <div class="row contact-row">
     <div class="col-md-7 contact-left">
