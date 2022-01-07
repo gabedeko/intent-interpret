@@ -6,13 +6,6 @@
 
 <div class="container-fluid landing-container">
   <div class="row landing-row">
-    <div class="col-md-6 landing-col-left">
-      <video src="@asset('images/videos/intent_interp_intro_video_test.mp4')" type="video/mp4" data-autoplay loop class="landing-video" muted plays-inline autoplay>
-      </video>
-      <!--div class="landing-msg-container">
-        <h1 class="landing-msg fadeIn"></h1>  
-      </div-->
-    </div>
     <div class="col-md-6 landing-col-right">
       <div class="landing-intro mt-5 fadeIn">
         <h2 class="landing-copy">Hello! I'm Antonio.</h2>
@@ -20,6 +13,13 @@
         <h2 class="landing-copy">I primarily provide interpreting services but offer other services, too.</h2>
         <h2 class="landing-copy">So, don't wait, hit me up. I look forward to working with you!</h2>
       </div>
+    </div>
+    <div class="col-md-6 landing-col-left">
+      <video src="@asset('images/videos/intent_interp_intro_video_test.mp4')" type="video/mp4" data-autoplay loop class="landing-video" muted plays-inline autoplay>
+      </video>
+      <!--div class="landing-msg-container">
+        <h1 class="landing-msg fadeIn"></h1>  
+      </div-->
     </div>
   </div>
 </div>
@@ -162,18 +162,41 @@
     </div>
   </div>
 </div>
-<div class="container-fluid testimonial-container">
+<div class="container-fluid testimonial-container pt-5">
+  <h1 class="testimonial-title">Testimonials</h1>
   <div class="row testimonial-row">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="..." alt="First slide">
+          <!--img class="d-block w-100" src="..." alt="First slide"-->
+          <div class="carousel-item-container">
+            <div class="carousel-item-content">
+              <img src="https://source.unsplash.com/random" class="carousel-item-img rounded-circle" alt="Cinque Terre" > 
+              <h3>John Doe</h3>
+              <h5>Organizer</h5>
+              <p>Donec placerat congue tortor id vestibulum. Aliquam velit turpis, porta quis dapibus sed, posuere vitae metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+          </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="..." alt="Second slide">
+          <div class="carousel-item-container">
+            <div class="carousel-item-content">
+              <img src="https://source.unsplash.com/random" class="carousel-item-img rounded-circle" alt="Cinque Terre" > 
+              <h3>John Doe</h3>
+              <h5>Organizer</h5>
+              <p>Donec placerat congue tortor id vestibulum. Aliquam velit turpis, porta quis dapibus sed, posuere vitae metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+          </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="..." alt="Third slide">
+          <div class="carousel-item-container">
+            <div class="carousel-item-content">
+              <img src="https://source.unsplash.com/random" class="carousel-item-img rounded-circle" alt="Cinque Terre" > 
+              <h3>John Doe</h3>
+              <h5>Organizer</h5>
+              <p>Donec placerat congue tortor id vestibulum. Aliquam velit turpis, porta quis dapibus sed, posuere vitae metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+          </div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

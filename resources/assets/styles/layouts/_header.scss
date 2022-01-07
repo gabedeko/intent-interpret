@@ -12,10 +12,21 @@
   //background-color: #000;
   border-bottom: 4px solid #000;
   &.home-nav-container {
+    border-bottom: none;
     position: absolute;
     background-color: rgba(0,0,0,.6);
     @media (max-width: 991.98px) {
       background-color: rgba(0,0,0,.6);
+    }
+
+    .fixed-top {
+      background-color: rgba(0, 0, 0, 0.6);
+      transition: background-color ease-in-out .3s;
+
+      &.scroll {
+        background-color: rgba(0, 0, 0, 1);
+        transition: background-color ease-in-out .3s;
+      }
     }
   }
 }
@@ -34,13 +45,20 @@
 
   .nav-item {
     color: #fff;
+    transition: color ease-in-out .3s;
     &:hover {
-      color: #fff;
+      color: rgb(168, 168, 168);
+      transition: color ease-in-out .3s;
     }
     .nav-link {
       color: #fff;
+      transition: color ease-in-out .3s;
       &:hover {
-        color: #fff;
+        color: rgb(168, 168, 168);
+        transition: color ease-in-out .3s;
+      }
+      @media (min-width: 768px) {
+        font-size: 20px;
       }
     }
   }

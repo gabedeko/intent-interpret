@@ -29,6 +29,13 @@ gsap.registerPlugin(ScrollTrigger);
 // Load Events
 jQuery(document).ready(() => routes.loadEvents());
 
+$(document).ready(function(){
+
+  $(window).scroll(function(){
+    $('nav').toggleClass('scroll', $(this).scrollTop() > 200);
+  })
+});
+
 
 gsap.utils.toArray('.parallax-container').forEach((section, i) => {
   section.bg = section.querySelector('.bg'); 
@@ -76,5 +83,7 @@ gsap.utils.toArray('.fadeIn').forEach((box) => {
     once: true,
   });
 });
+
+
 
 

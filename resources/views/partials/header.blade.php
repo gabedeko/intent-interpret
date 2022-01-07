@@ -10,13 +10,13 @@
   ">
     <a class="brand" href="{{ home_url('/') }}">{{-- get_bloginfo('name', 'display') --}}</a>
 
-    <nav class="navbar navbar-expand-lg justify-content-between pl-0 pr-0">
+    <nav class="navbar navbar-expand-lg justify-content-between pl-0 pr-0 fixed-top">
       <?php /* @if (has_nav_menu('primary_navigation'))
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
       @endif
       */ ?>
       <img class="header-logo" src="@asset('images/logo/intent_interp_logo.png')" alt="">
-      <a class="navbar-brand" href="#">Intentional Interpreting</a>
+      <a class="navbar-brand" href="/">Intentional Interpreting</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
