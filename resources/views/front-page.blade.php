@@ -75,7 +75,7 @@
 <div class="container-fluid about-container">
   <div class="row about-row-2">
       <div class="col-md-10 about-row-2-left fadeIn">
-        <h1 class="exp-title">Organizations + Foundations + Community</h1>
+        <h1 class="exp-title">Affiliations +</h1>
       </div>
       <div class="col-md-2 about-row-2-right">
       <svg width="120" height="120" viewBox="0 0 472 672" fill="none" xmlns="http://www.w3.org/2000/svg" class="about-row-2-arrow-lg">
@@ -171,30 +171,38 @@
           <!--img class="d-block w-100" src="..." alt="First slide"-->
           <div class="carousel-item-container">
             <div class="carousel-item-content">
-              <img src="https://source.unsplash.com/random" class="carousel-item-img rounded-circle" alt="Cinque Terre" > 
-              <h3>John Doe</h3>
-              <h5>Organizer</h5>
-              <p>Donec placerat congue tortor id vestibulum. Aliquam velit turpis, porta quis dapibus sed, posuere vitae metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+               <div class="carousel-item-top">
+                 <h3>John Doe</h3>
+                </div>
+               <div class="carousel-item-btm">
+               <h5>Organizer</h5>
+                <p>Donec placerat congue tortor id vestibulum. Aliquam velit turpis, porta quis dapibus sed, posuere vitae metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+               </div>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="carousel-item-container">
             <div class="carousel-item-content">
-              <img src="https://source.unsplash.com/random" class="carousel-item-img rounded-circle" alt="Cinque Terre" > 
-              <h3>John Doe</h3>
-              <h5>Organizer</h5>
-              <p>Donec placerat congue tortor id vestibulum. Aliquam velit turpis, porta quis dapibus sed, posuere vitae metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              <div class="carousel-item-top">
+                <h3>John Doe</h3>
+              </div>
+               <div class="carousel-item-btm">
+               <h5>Organizer</h5>
+                <p>Donec placerat congue tortor id vestibulum. Aliquam velit turpis, porta quis dapibus sed, posuere vitae metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+               </div>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="carousel-item-container">
             <div class="carousel-item-content">
-              <img src="https://source.unsplash.com/random" class="carousel-item-img rounded-circle" alt="Cinque Terre" > 
-              <h3>John Doe</h3>
-              <h5>Organizer</h5>
-              <p>Donec placerat congue tortor id vestibulum. Aliquam velit turpis, porta quis dapibus sed, posuere vitae metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              <div class="carousel-item-top"></div>
+               <div class="carousel-item-btm">
+               <h5>Organizer</h5>
+                <p>Donec placerat congue tortor id vestibulum. Aliquam velit turpis, porta quis dapibus sed, posuere vitae metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </p>
+               </div>
             </div>
           </div>
         </div>
@@ -227,9 +235,7 @@
       <div class="contact-right-btm">
         <h2>Social</h2>
         <div class="social-links">
-          <p>Facebook</p>
-          <p>Twitter</p>
-          <p>Instagram</p>
+          <p><a class="social-link" href="https://www.linkedin.com/in/intllcx2/" target="_blank">LinkedIn</a></p> 
         </div>
       </div>
     </div>

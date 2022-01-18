@@ -10,13 +10,28 @@
   ">
     <a class="brand" href="{{ home_url('/') }}">{{-- get_bloginfo('name', 'display') --}}</a>
 
-    <nav class="navbar navbar-expand-lg justify-content-between pl-0 pr-0 fixed-top">
+    <nav class="navbar navbar-expand-lg justify-content-between pl-0 pr-0 fixed-top
+    <?php
+    if ( ! is_front_page() ) {
+        ?>
+        not-home-navbar
+        <?php
+    }
+    ?>">
       <?php /* @if (has_nav_menu('primary_navigation'))
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
       @endif
       */ ?>
       <img class="header-logo" src="@asset('images/logo/intent_interp_logo.png')" alt="">
-      <a class="navbar-brand" href="/">Intentional Interpreting</a>
+      <a class="navbar-brand
+      <?php /*
+      if ( ! is_front_page() ) {
+          ?>
+          not-home-navbar-brand
+          <?php
+      }
+      */ ?>
+      " href="/">Intentional Interpreting</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -40,7 +55,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/notary-services">Notary Public Services</a>
-              <a class="dropdown-item" href="#">TV Streaming Service</a>
+              <a class="dropdown-item" href="/tv-streaming-service">TV Streaming Service</a>
             </div>
           </li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>

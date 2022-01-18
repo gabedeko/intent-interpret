@@ -10,7 +10,7 @@
   
   z-index: 9999;
   //background-color: #000;
-  border-bottom: 4px solid #000;
+  //border-bottom: 4px solid #000;
   &.home-nav-container {
     border-bottom: none;
     position: absolute;
@@ -32,11 +32,26 @@
 }
 
 .navbar {
+  @media (max-width: 991.98px) {
+    width: 100%;
+  }
   .navbar-brand {
     color: #fff;
     &:hover {
       color: #fff;
     }
+    @media (max-width: 576px) {
+      margin: 0;
+    }
+  }
+  .not-home-navbar-brand {
+    color: #000;
+    &:hover {
+      color: #000;
+    }
+  }
+  &.not-home-navbar {
+    background-color: #000;
   }
 }
 
@@ -44,21 +59,43 @@
 .navbar-nav {
 
   .nav-item {
+    text-align: right;
     color: #fff;
     transition: color ease-in-out .3s;
     &:hover {
-      color: rgb(168, 168, 168);
+      //color: rgb(168, 168, 168);
       transition: color ease-in-out .3s;
     }
     .nav-link {
       color: #fff;
       transition: color ease-in-out .3s;
       &:hover {
-        color: rgb(168, 168, 168);
+        //color: rgb(168, 168, 168);
         transition: color ease-in-out .3s;
       }
       @media (min-width: 768px) {
         font-size: 20px;
+      }
+    }
+    &.dropdown {
+      border-bottom: 1px soild #fff;
+      &.show {
+        text-align: right;
+        border-bottom: none;
+      }
+    }
+    .dropdown-menu {
+      padding: 0;
+      .dropdown-item {
+        border:1px solid #fff;
+        padding: 4px;
+        transition: background-color ease-in-out .3s, color ease-in-out .3s;
+        &:focus {
+          border: 2px solid #000;
+          background-color: #fff;
+          color: #000;
+          transition: background-color ease-in-out .3s, color ease-in-out .3s;
+        }
       }
     }
   }
@@ -90,6 +127,9 @@
 
 .navbar-collapse {
   justify-content: flex-end;
+  padding: 0 16px;
+  text-align: right;
+  display: flex;
 }
 
 .navbar-toggler {
@@ -107,8 +147,11 @@
   }
 }
 
-
 .header-logo {
   height: 80px;
-  margin-right: 16px;
+  margin: 0 16px;
+  @media (max-width: 576px) {
+    height: 56px;
+    margin: 0 8px;
+  }
 }
