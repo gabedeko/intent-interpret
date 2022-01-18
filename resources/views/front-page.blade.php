@@ -8,10 +8,7 @@
   <div class="row landing-row">
     <div class="col-md-6 landing-col-right">
       <div class="landing-intro mt-5 fadeIn">
-        <h2 class="landing-copy">Hello! I'm Antonio.</h2>
-        <h2 class="landing-copy">My sign name is 'A' across my mustache.</h2>
-        <h2 class="landing-copy">I primarily provide interpreting services but offer other services, too.</h2>
-        <h2 class="landing-copy">So, don't wait, hit me up. I look forward to working with you!</h2>
+        <?php the_field('landing_msg'); ?>
       </div>
     </div>
     <div class="col-md-6 landing-col-left">
@@ -53,22 +50,10 @@
               <li class="list-group-item">Medical</li>
             </ul>
             <p>We provide services in many more settings and are always willing to expand. For additional or unusual setting inquires, please contact me.</p-->
-            <p>Providing quality ASL-English interpretation services in the DC metro area</p>
-            
+            <?php the_field('about_msg'); ?>
     </div>
     <div class="col fadeIn about-col-1">
-            <h3>Professionalism</h3>
-            <hr>
-            <p>We abide by the Registry of Interpreters for the Deaf’s (RID) Code of Professional Conduct (CPC). There is an expanded version of the CPC, however, it has also been truncated.</p>
-            <ol class="list-group list-group-flush">
-              <li class="list-group-item">1. Interpreters adhere to standards of confidential communication.</li>
-              <li class="list-group-item">2. Interpreters possess the professional skills and knowledge required for the specific interpreting situation.</li>
-              <li class="list-group-item">3. Interpreters conduct themselves in a manner appropriate to the specific interpreting situation.</li>
-              <li class="list-group-item">4. Interpreters demonstrate respect for consumers.</li>
-              <li class="list-group-item">5. Interpreters demonstrate respect for colleagues, interns, and students of the profession.</li>
-              <li class="list-group-item">6. Interpreters maintain ethical business practices.</li>
-              <li class="list-group-item">7. Interpreters engage in professional development.</li>
-            </ol>
+      <?php the_field('professionalism'); ?>
     </div>
   </div>
 </div>
@@ -94,9 +79,7 @@
   <div class="row parallax-row p-3">
     <div class="exp-num fadeIn">01</div>
     <div class="exp-desc fadeIn">
-      <h2>Reality of ASL Interpreting - PoC</h2>
-      <p>Antonio founded this Facebook group in 2018 and it has been thriving ever since! It currently has 1K+ members nationally and is still growing. This group focuses on bringing people of color together in the interpreting and Deaf communities for empowerment and resources.</p>
-      <button type="button" class="btn btn-light">More Info</button>
+      <?php the_field('info_1'); ?>
     </div>
   </div>
 </div>
@@ -105,9 +88,7 @@
   <div class="row parallax-row p-3">
     <div class="exp-num fadeIn">02</div>
     <div class="exp-desc fadeIn">
-      <h2>SOUTHERN MARYLAND ASL CONNECTION</h2>
-      <p>This endeavor was the first of its kind. It brought together people in the D.C. metropolitan area who were interested in sign language. While it was a successful, it was only a pilot. Stay tuned for updates because it may be making a return.</p>
-      <button type="button" class="btn btn-light">More Info</button>
+    <?php the_field('info_2'); ?>
     </div>
   </div>
 </div>
@@ -143,22 +124,19 @@
   </div>
   <div class="row justify-content-start process-row-3">
     <div class="col-md-4 fadeIn">
-      <h3>REGISTRY OF INTERPRETERS FOR THE DEAF</h3>
-      <p>The Registry of Interpreters for the Deaf, Inc. (RID), a national membership organization, plays a leading role in advocating for excellence in the delivery of interpretation and transliteration services between people who use sign language and people who use spoken language. </p>
+      <?php the_field('org_1'); ?>
+      
     </div>
     <div class="col-md-4 fadeIn">
-      <h3>POTOMAC CHAPTER OF RID</h3>
-      <p>The Potomac Chapter of RID is a local affiliate chapter of RID. This organization is mostly made up of sign language interpreters who practice in Maryland and Washington, D.C.</p>
+      <?php the_field('org_2'); ?>
     </div>
   </div>
   <div class="row justify-content-end process-row-4">
     <div class="col-md-4 fadeIn">
-      <h3>NATIONAL ALLIANCE OF BLACK INTERPRETERS – DISTRICT OF COLUMBIA</h3>
-      <p>The purpose of this organization is to promote excellence, empowerment and the continued growth of African American/Black professionals in the field of sign language interpreting in the context of a multicultural, multilingual environment.</p>
+      <?php the_field('org_3'); ?>
     </div>
     <div class="col-md-4 fadeIn">
-      <h3>Cras pretium</h3>
-      <p>Sed ut est imperdiet, sodales nibh non, vehicula magna. Praesent aliquet libero et elit cursus consectetur. Aliquam in dapibus tortor. Vestibulum ipsum purus, sagittis id tincidunt cursus, suscipit a ante. Vestibulum a venenatis magna.</p>
+      <?php the_field('org_4'); ?>
     </div>
   </div>
 </div>
@@ -167,8 +145,34 @@
   <div class="row testimonial-row">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <!--img class="d-block w-100" src="..." alt="First slide"-->
+          <?php if( have_rows('testimonials') ): ?>
+          <?php
+            //add active to first of list
+            $num = 0;
+          ?>
+          <?php while( have_rows('testimonials') ): the_row(); 
+                  $testimonial_name = get_sub_field('testimonial_name');
+                  $testimonial_title = get_sub_field('testimonial_title');
+                  $testimonial_msg = get_sub_field('testimonial_msg');
+                  ?>
+                  <div class="carousel-item <?php echo ($num == 0) ? "active" : ""; ?>">
+              <div class="carousel-item-container">
+                <div class="carousel-item-content">
+                      <div class="carousel-item-top">
+                        <h3><?php echo $testimonial_name ?></h3>
+                        </div>
+                      <div class="carousel-item-btm">
+                      <h5><?php echo $testimonial_title ?></h5>
+                      <?php echo $testimonial_msg ?>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <?php $num++; ?>
+              <?php endwhile; ?>
+              
+          <?php endif; ?>
+        <!--div class="carousel-item">
           <div class="carousel-item-container">
             <div class="carousel-item-content">
                <div class="carousel-item-top">
@@ -180,32 +184,7 @@
                </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-item-container">
-            <div class="carousel-item-content">
-              <div class="carousel-item-top">
-                <h3>John Doe</h3>
-              </div>
-               <div class="carousel-item-btm">
-               <h5>Organizer</h5>
-                <p>Donec placerat congue tortor id vestibulum. Aliquam velit turpis, porta quis dapibus sed, posuere vitae metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-               </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-item-container">
-            <div class="carousel-item-content">
-              <div class="carousel-item-top"></div>
-               <div class="carousel-item-btm">
-               <h5>Organizer</h5>
-                <p>Donec placerat congue tortor id vestibulum. Aliquam velit turpis, porta quis dapibus sed, posuere vitae metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                </p>
-               </div>
-            </div>
-          </div>
-        </div>
+        </div-->
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

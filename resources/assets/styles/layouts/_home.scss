@@ -338,6 +338,7 @@
                             
                             width: calc(100vw/2);
                             .carousel-item-top {
+                                border-radius: 16px 16px 0 0;
                                 text-align: center;
                                 padding: 8px;
                                 background-color: $ii-gold;
