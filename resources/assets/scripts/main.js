@@ -31,9 +31,21 @@ jQuery(document).ready(() => routes.loadEvents());
 
 $(document).ready(function(){
 
+  var lastScrollTop = 0;
   $(window).scroll(function(){
-    $('nav').toggleClass('scroll', $(this).scrollTop() > 200);
-  })
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop){
+        //https://gist.github.com/GregKochnev/2f56db8f717000323696
+      $('nav').removeClass('scroll');
+    } else {
+       //  
+      $('nav').addClass('scroll');
+    }
+    lastScrollTop = st;
+  });
+  //$(window).scroll(function(){
+  //  $('nav').toggleClass('scroll', $(this).scrollTop() > 200);
+  //})
 });
 
 

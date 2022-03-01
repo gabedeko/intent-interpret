@@ -33,7 +33,7 @@
                 flex-direction: column;
                 justify-content: space-around;
                 height: 100%;
-                padding: 16px;
+                //padding: 16px;
                 .landing-copy {
                     color: #fff;
                 }
@@ -58,7 +58,7 @@
 .about-container {
     
     .about-row-1 {
-        min-height: 80vh;
+        //min-height: 80vh;
         display: flex;
         .about-title {
             align-self: center;
@@ -71,6 +71,16 @@
             align-self: center;
             hr {
                 border: 1px solid #000;
+                width: 100%;
+            }
+        }
+    }
+    .professionalism-row {
+        height: 100%;
+        .professionalism-col {
+            height: 100%;
+            .professionalism-img {
+                height: 100%;
                 width: 100%;
             }
         }
@@ -281,20 +291,28 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-between;
             .contact-right-btm {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                justify-content: space-around;
                 .social-links {
                     display: flex;
                     justify-content: space-around;
 
                     .social-link {
-                        transition: border ease-in-out .3s;
+                        transition: background-color ease-in-out .3s, color ease-in-out .3s;
                         padding: 12px 8px 8px 8px;
                         background-color: $ii-gold;
                         border-radius: 16px;
+                        color: #000;
+
                         &:hover {
                             text-decoration: none;
-                            transition: background-color ease-in-out .3s;
+                            transition: background-color ease-in-out .3s, color ease-in-out .3s;
+                            color: #fff;
                             background-color: #000;
                         }
                     }
@@ -337,6 +355,9 @@
                             //border-right: 4px solid #fff;
                             
                             width: calc(100vw/2);
+                            @media (max-width: 767.98px) {
+                                width: 90%;
+                            }
                             .carousel-item-top {
                                 border-radius: 16px 16px 0 0;
                                 text-align: center;

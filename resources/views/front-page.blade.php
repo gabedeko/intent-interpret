@@ -6,18 +6,14 @@
 
 <div class="container-fluid landing-container">
   <div class="row landing-row">
-    <div class="col-md-6 landing-col-right">
-      <div class="landing-intro mt-5 fadeIn">
-        <?php the_field('landing_msg'); ?>
+    <div class="col-md-12 landing-col-right">
+      <div class="landing-intro fadeIn_">
+        <?php/* the_field('landing_msg'); */?>
+        <video src="@asset('images/videos/intent_interp_intro_video_v1.mp4')" type="video/mp4" data-autoplay loop class="landing-video" muted plays-inline autoplay>
+      </video>
       </div>
     </div>
-    <div class="col-md-6 landing-col-left">
-      <video src="@asset('images/videos/intent_interp_intro_video_test.mp4')" type="video/mp4" data-autoplay loop class="landing-video" muted plays-inline autoplay>
-      </video>
-      <!--div class="landing-msg-container">
-        <h1 class="landing-msg fadeIn"></h1>  
-      </div-->
-    </div>
+    
   </div>
 </div>
 
@@ -52,15 +48,27 @@
             <p>We provide services in many more settings and are always willing to expand. For additional or unusual setting inquires, please contact me.</p-->
             <?php the_field('about_msg'); ?>
     </div>
-    <div class="col fadeIn about-col-1">
-      <?php the_field('professionalism'); ?>
+  </div>
+  <div class="row">
+  <?php the_field('professionalism'); ?>
+  </div>
+  <div class="row professionalism-row">
+    <div class="col-md professionalism-col">
+      <img class="professionalism-img" src="@asset('images/ii_prof_img_0.png')" alt="">
+    </div>
+    <div class="col-md professionalism-col">
+      <img class="professionalism-img" src="@asset('images/ii_prof_img_0.png')" alt="">
+    </div>
+    <div class="col-md professionalism-col">
+      <img class="professionalism-img" src="@asset('images/ii_prof_img_0.png')" alt="">
     </div>
   </div>
+  
 </div>
 <div class="container-fluid about-container">
   <div class="row about-row-2">
       <div class="col-md-10 about-row-2-left fadeIn">
-        <h1 class="exp-title">Affiliations +</h1>
+        <h1 class="exp-title">Community Involvement +</h1>
       </div>
       <div class="col-md-2 about-row-2-right">
       <svg width="120" height="120" viewBox="0 0 472 672" fill="none" xmlns="http://www.w3.org/2000/svg" class="about-row-2-arrow-lg">
@@ -111,32 +119,25 @@
 <div class="container-fluid process-container">
   <div class="row process-row-1 fadeIn">
     <div class="col p-0">
-      <h4>Organizations</h4>
+      <h4>Strategy</h4>
     </div>
   </div>
   <div class="row process-row-2 fadeIn">
     <div class="col">
-      <h1 class="process-row-header mb-4">User Experience</h1>
-      <h1 class="process-row-header mb-4" mb-4>Strategy</h1>
-      <h1 class="process-row-header mb-4">User Interface</h1>
+      <h1 class="process-row-header mb-4" mb-4>Reliability</h1>
+      <h1 class="process-row-header mb-4">Expertise</h1>
       <h1 class="process-row-header">Leadership</h1>
     </div>
   </div>
-  <div class="row justify-content-start process-row-3">
+  <div class="row">
     <div class="col-md-4 fadeIn">
       <?php the_field('org_1'); ?>
-      
     </div>
     <div class="col-md-4 fadeIn">
       <?php the_field('org_2'); ?>
     </div>
-  </div>
-  <div class="row justify-content-end process-row-4">
     <div class="col-md-4 fadeIn">
       <?php the_field('org_3'); ?>
-    </div>
-    <div class="col-md-4 fadeIn">
-      <?php the_field('org_4'); ?>
     </div>
   </div>
 </div>
@@ -204,16 +205,18 @@
       <h1 class="contact-left-btm">Let's Communicate</h1>
     </div>
     <div class="col-md-4 contact-right">
-      <div class="contact-right-top">
+      <div class="contact-right-top mt-5">
         <h2>Contact</h2>
         <p>For work inquiries feel free to get in touch with me</p>
-        <?php
+        <?/*php
         gravity_form( 1, false, false, false, '', false );
-        ?>
+        */?>
+
+        @php the_content() @endphp
       </div>
       <div class="contact-right-btm">
-        <h2>Social</h2>
-        <div class="social-links">
+        <h2 class="mt-5 mb-5">Social</h2>
+        <div class="social-links mt-5">
           <p><a class="social-link" href="https://www.linkedin.com/in/intllcx2/" target="_blank">LinkedIn</a></p> 
         </div>
       </div>

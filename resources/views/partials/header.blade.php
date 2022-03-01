@@ -45,10 +45,12 @@
         }
         ?>
         ">
-          <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+        <?php
+        if ( is_front_page() ) {
+        ?>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
           <li class="nav-item"><a class="nav-link" href="#organization">Organizations</a></li>
-          <li class="nav-item"><a class="nav-link" href="#rates">Rates</a></li>
+          <li class="nav-item"><a class="nav-link" href="/#contact">Rates</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#request" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Request Services
@@ -58,7 +60,27 @@
               <a class="dropdown-item" href="/tv-streaming-service">TV Streaming Service</a>
             </div>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <?php
+        } else {
+        ?>
+          <li class="nav-item"><a class="nav-link" href="/#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="/#organization">Organizations</a></li>
+          <li class="nav-item"><a class="nav-link" href="/#contact">Rates</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#request" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Request Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/notary-services">Notary Public Services</a>
+              <a class="dropdown-item" href="/tv-streaming-service">TV Streaming Service</a>
+            </div>
+          </li>
+        <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
+        <?php
+        }
+        ?>
+          
         </ul>
       </div>
     </nav>

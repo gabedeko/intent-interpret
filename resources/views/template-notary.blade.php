@@ -7,15 +7,6 @@
 @section('content')
   @while(have_posts()) @php the_post() @endphp
 
-  <script>
-      Calendly.initInlineWidget({
-        url: 'https://calendly.com/intllc',
-        parentElement: document.getElementById('SAMPLEdivID'),
-        prefill: {},
-        utm: {}
-        });
-  </script>
-
     <div class="container page-landing-container">
             <div class="row page-landing-row">
                 <div class="col page-landing-col  mt-5 mb-5" style="background-image:url(@asset('images/0.jpg'));"></div>
@@ -68,15 +59,17 @@
         </div>
         <!-- Calendly inline widget begin -->
         <div class="calendly-inline-widget" id="SAMPLEdivID" data-url="https://calendly.com/intllc" style="min-width:320px;height:630px;"></div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!--script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script-->
         <!-- Calendly inline widget end -->
+        
 
         <div class="row mt-5 justify-content-end">
             <div class="col-md-6">
                 <h1>Contact</h1>
-                <?php
+                <?/*php
                 gravity_form( 1, false, false, false, '', false );
-                ?>
+                */?>
+                @php the_content() @endphp
             </div>
             
         </div>
