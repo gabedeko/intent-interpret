@@ -8,10 +8,10 @@
   <div class="row landing-row">
     <div class="col-md-12 landing-col-right">
       <div class="landing-intro fadeIn_">
-        <?php/* the_field('landing_msg'); 
+        <?php /* the_field('landing_msg'); 
         <video src="@asset('images/videos/intent_interp_intro_video_v1.mp4')" type="video/mp4" data-autoplay loop class="landing-video" muted plays-inline autoplay>
         </video>
-        */?>
+        */ ?>
         <div class="landing-video-container">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/1Jg_xjOAkAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -55,34 +55,34 @@
   </div>
   <div class="row">
   <?php the_field('professionalism'); ?>
-  </div> , Collaborative, Customer Centric, Ethical, Up To Date
+  </div>
   <div class="row professionalism-row mt-5 mb-5">
-    <div class="col-md professionalism-col">
+    <div class="col-md professionalism-col fadeInDown">
       <img class="professionalism-img" src="@asset('images/professionalism/ii_prof_img_1.png')" alt="">
-      <h3 class="text-center">On Time</h3>
+      <h3 class="text-center mt-5">On Time</h3>
     </div>
-    <div class="col-md professionalism-col">
+    <div class="col-md professionalism-col fadeInUp">
       <img class="professionalism-img" src="@asset('images/professionalism/ii_prof_img_0.png')" alt="">
-      <h3 class="text-center">Collaborative</h3>
+      <h3 class="text-center mt-5">Collaborative</h3>
     </div>
-    <div class="col-md professionalism-col">
+    <div class="col-md professionalism-col fadeInDown">
       <img class="professionalism-img" src="@asset('images/professionalism/ii_prof_img_2.png')" alt="">
-      <h3 class="text-center">Customer Centric</h3>
+      <h3 class="text-center mt-5">Customer Centric</h3>
     </div>
-    <div class="col-md professionalism-col">
+    <div class="col-md professionalism-col fadeInUp">
       <img class="professionalism-img" src="@asset('images/professionalism/ii_prof_img_4.png')" alt="">
-      <h3 class="text-center">Ethical</h3>
+      <h3 class="text-center mt-5">Ethical</h3>
     </div>
-    <div class="col-md professionalism-col">
+    <div class="col-md professionalism-col fadeInDown">
       <img class="professionalism-img" src="@asset('images/professionalism/ii_prof_img_3.png')" alt="">
-      <h3 class="text-center">Up To Date</h3>
+      <h3 class="text-center mt-5">Up To Date</h3>
     </div>
   </div>
   
 </div>
 <div class="container-fluid about-container">
   <div class="row about-row-2">
-      <div class="col-md-10 about-row-2-left fadeIn">
+      <div class="col-md-10 about-row-2-left">
         <h1 class="exp-title">Community Involvement +</h1>
       </div>
       <div class="col-md-2 about-row-2-right">
@@ -231,7 +231,7 @@
       </div>
       <div class="contact-right-btm">
         <h2 class="mt-5 mb-5">Social</h2>
-        <div class="social-links mt-5">
+        <div class="social-links">
           <p><a class="social-link" href="https://www.linkedin.com/in/intllcx2/" target="_blank">LinkedIn</a></p> 
         </div>
       </div>

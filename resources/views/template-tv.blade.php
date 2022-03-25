@@ -105,9 +105,9 @@
             </div>
             
         </div>
-        <div class="row mt-5 justify-content-center">
-            <div class="col-md-4 text-center">
-                <a class="general-link" href="/#contact"><h1 class="general-link">Contact</h1></a>
+        <div class="row mt-5 justify-content-end">
+            <div class="col-md-6 text-center">
+                <h2 class="general-link">Contact</h2>
                 <?/*php
                 gravity_form( 1, false, false, false, '', false );
                 */?>

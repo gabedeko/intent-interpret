@@ -96,6 +96,26 @@ gsap.utils.toArray('.fadeIn').forEach((box) => {
   });
 });
 
+gsap.utils.toArray('.fadeInDown').forEach((box) => {
+  const anim = gsap.fromTo(box, {autoAlpha: 0, y: -100}, {duration: .9, autoAlpha: 1, y: 0});
+  ScrollTrigger.create({
+    trigger: box,
+    animation: anim,
+    toggleActions: 'play none none none',
+    once: true,
+  });
+});
+
+gsap.utils.toArray('.fadeInUp').forEach((box) => {
+  const anim = gsap.fromTo(box, {autoAlpha: 0, y: 100}, {duration: .9, autoAlpha: 1, y: 0});
+  ScrollTrigger.create({
+    trigger: box,
+    animation: anim,
+    toggleActions: 'play none none none',
+    once: true,
+  });
+});
+
 
 
 
