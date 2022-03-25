@@ -8,9 +8,13 @@
   <div class="row landing-row">
     <div class="col-md-12 landing-col-right">
       <div class="landing-intro fadeIn_">
-        <?php/* the_field('landing_msg'); */?>
+        <?php/* the_field('landing_msg'); 
         <video src="@asset('images/videos/intent_interp_intro_video_v1.mp4')" type="video/mp4" data-autoplay loop class="landing-video" muted plays-inline autoplay>
-      </video>
+        </video>
+        */?>
+        <div class="landing-video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/1Jg_xjOAkAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
     
@@ -29,7 +33,7 @@
 <div class="container about-container" id="experience">
   <div class="row about-row-1 mt-3 mb-3">
     <div class="col-md-6 about-title">
-        <h5>About</h5>
+        <h5>Certified ASL-English interpreter providing services in the DC metro area and across the world, remotely.</h5>
     </div>
     <div class="col-md-6 fadeIn about-col-1">
             <!--h3>Experience</h3>
@@ -51,16 +55,27 @@
   </div>
   <div class="row">
   <?php the_field('professionalism'); ?>
-  </div>
-  <div class="row professionalism-row">
+  </div> , Collaborative, Customer Centric, Ethical, Up To Date
+  <div class="row professionalism-row mt-5 mb-5">
     <div class="col-md professionalism-col">
-      <img class="professionalism-img" src="@asset('images/ii_prof_img_0.png')" alt="">
+      <img class="professionalism-img" src="@asset('images/professionalism/ii_prof_img_1.png')" alt="">
+      <h3 class="text-center">On Time</h3>
     </div>
     <div class="col-md professionalism-col">
-      <img class="professionalism-img" src="@asset('images/ii_prof_img_0.png')" alt="">
+      <img class="professionalism-img" src="@asset('images/professionalism/ii_prof_img_0.png')" alt="">
+      <h3 class="text-center">Collaborative</h3>
     </div>
     <div class="col-md professionalism-col">
-      <img class="professionalism-img" src="@asset('images/ii_prof_img_0.png')" alt="">
+      <img class="professionalism-img" src="@asset('images/professionalism/ii_prof_img_2.png')" alt="">
+      <h3 class="text-center">Customer Centric</h3>
+    </div>
+    <div class="col-md professionalism-col">
+      <img class="professionalism-img" src="@asset('images/professionalism/ii_prof_img_4.png')" alt="">
+      <h3 class="text-center">Ethical</h3>
+    </div>
+    <div class="col-md professionalism-col">
+      <img class="professionalism-img" src="@asset('images/professionalism/ii_prof_img_3.png')" alt="">
+      <h3 class="text-center">Up To Date</h3>
     </div>
   </div>
   
@@ -201,7 +216,7 @@
 <div class="container-fluid contact-container" id="contact">
   <div class="row contact-row">
     <div class="col-md-7 contact-left">
-      <h5 class="pt-5 contact-left-top">Book an appointment for free!</h5>
+      <a class="pt-5 contact-left-top" href="https://calendly.com/intllc" target="_blank" ><h5> CLICK HERE TO BOOK AN APPOINTMENT FOR FREE!</h5></a>
       <h1 class="contact-left-btm">Let's Communicate</h1>
     </div>
     <div class="col-md-4 contact-right">

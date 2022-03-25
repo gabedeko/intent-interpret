@@ -45,21 +45,26 @@
             </div>
         </div>
         <div class="row mt-5 mb-5">
-            <div class="col-md-4 d-flex flex-column text-center">
+            <div class="col-md-3 d-flex flex-column text-center">
                 <!--img src="@asset('images/roman-1-4.jpg')" class="tv-option-img" alt="Cinque Terre"--> 
-                <h1>1 Plug</h1>
+                <h2>1 Plug</h2>
                 <p class="body-2">1 PLUG – $30</p>
                 <p class="body-3">One active line of service that can be used on one device at a time.</p>
             </div>
-            <div class="col-md-4 d-flex flex-column text-center">
-                <h1>2 Plugs</h1>
-                <p class="body-2">2 PLUGS – $30</p>
+            <div class="col-md-3 d-flex flex-column text-center">
+                <h2>2 Plugs</h2>
+                <p class="body-2">2 PLUGS – $60</p>
                 <p class="body-3">Two active lines of service that can be used on one device at a time.</p>
             </div>
-            <div class="col-md-4 d-flex flex-column text-center">   
-                <h1>3</h1>
-                <p class="body-2">3 PLUGS – $30</p>
+            <div class="col-md-3 d-flex flex-column text-center">   
+                <h2>3 Plugs</h2>
+                <p class="body-2">3 PLUGS – $90</p>
                 <p class="body-3">Three active lines of service that can be used on one device at a time.</p>
+            </div>
+            <div class="col-md-3 d-flex flex-column text-center">   
+                <h2>4 Plugs</h2>
+                <p class="body-2">4 PLUGS – $120</p>
+                <p class="body-3">Four active lines of service that can be used on one device at a time.</p>
             </div>
         </div>
         <div class="row justify-content-center">
@@ -91,7 +96,7 @@
         <div class="col-md-6  d-flex align-items-center">
             <p class="body-1">Easy Two Step Process:</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 text-center">
                 <ol>
                     <li>Fill out the contact form below indicating which plug and type of service you would like, e.g. “2 plugs, family friendly” or “1 plug, adult.</li>
                     <li>I will email you payment instructions, your account info, and access instructions.</li>
@@ -100,9 +105,9 @@
             </div>
             
         </div>
-        <div class="row mt-5 justify-content-end">
-            <div class="col-md-6">
-                <h1>Contact</h1>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-md-4 text-center">
+                <a class="general-link" href="/#contact"><h1 class="general-link">Contact</h1></a>
                 <?/*php
                 gravity_form( 1, false, false, false, '', false );
                 */?>
