@@ -24,7 +24,7 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <p>Antonio is also a commissioned Notary Public in Prince George’s County, Maryland. Through, Intentional Interpreting, LLC, we provide in-person, remote and e-notarizations for a nominal fee.</p>
+                <p>Antonio is also a commissioned Notary Public in Prince George’s County, Maryland. Through, TFITHP, LLC, we provide in-person, remote and e-notarizations for a nominal fee.</p>
                 <p>Given the current times, remote services are preferred. The process is fairly simple and quick!</p>
             </div>
             <div class="col-md-6">

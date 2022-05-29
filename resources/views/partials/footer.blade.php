@@ -5,6 +5,6 @@
       @php dynamic_sidebar('sidebar-footer') @endphp
     </div>
     */ ?>
-    <p class="text-center text-muted">© 2022 Intentional Interpreting, Inc</p>
+    <p class="text-center text-muted">© 2022 TFITHP, Inc</p>
   </footer>
 </div>

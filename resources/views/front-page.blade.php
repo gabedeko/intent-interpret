@@ -13,7 +13,7 @@
         </video>
         */ ?>
         <div class="landing-video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/1Jg_xjOAkAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/k7rlYrEGGWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -33,7 +33,6 @@
 <div class="container about-container" id="experience">
   <div class="row about-row-1 mt-3 mb-3">
     <div class="col-md-6 about-title">
-        <h5>Certified ASL-English interpreter providing services in the DC metro area and across the world, remotely.</h5>
     </div>
     <div class="col-md-6 fadeIn about-col-1">
             <!--h3>Experience</h3>
@@ -82,8 +81,8 @@
 </div>
 <div class="container-fluid about-container">
   <div class="row about-row-2">
-      <div class="col-md-10 about-row-2-left">
-        <h1 class="exp-title">Community Involvement +</h1>
+      <div class="col-md-10 about-row-2-left mt-5">
+        <h1 class="exp-title text-uppercase">FOUNDATIONS</h1>
       </div>
       <div class="col-md-2 about-row-2-right">
       <svg width="120" height="120" viewBox="0 0 472 672" fill="none" xmlns="http://www.w3.org/2000/svg" class="about-row-2-arrow-lg">
@@ -99,7 +98,7 @@
 
 <div class="container-fluid parallax-container" id="organization">
   <div class="bg" style="background-image:url(@asset('images/0.jpg'))"></div>
-  <div class="row parallax-row p-3">
+  <div class="row parallax-row p-5">
     <div class="exp-num fadeIn">01</div>
     <div class="exp-desc fadeIn">
       <?php the_field('info_1'); ?>
@@ -108,7 +107,7 @@
 </div>
 <div class="container-fluid parallax-container">
   <div class="bg" style="background-image:url(@asset('images/1.jpg'))"></div>
-  <div class="row parallax-row p-3">
+  <div class="row parallax-row p-5">
     <div class="exp-num fadeIn">02</div>
     <div class="exp-desc fadeIn">
     <?php the_field('info_2'); ?>
@@ -117,9 +116,9 @@
 </div>
 <div class="container-fluid community-container">
   <div class="row community-row">
-    <div class="col-md-6 community-left p-3">
+    <div class="col-md-6 community-left p-5">
       <h5>03</h5>
-      <h1>COMMUNITY INVOLVEMENT</h1>
+      <p class="body-2">A pioneer. The first person of color president of PCRID</p>
         <h5><a class="community-btn" href="https://www.pcrid.org/" target="_blank">Website</a></h5> 
         <svg width="64" height="64" viewBox="0 0 672 472" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M662.627 258.627C675.124 246.131 675.124 225.869 662.627 213.373L458.981 9.72601C446.484 -2.77099 426.223 -2.77099 413.726 9.72601C401.229 22.223 401.229 42.484 413.726 54.981L594.745 236L413.726 417.019C401.229 429.516 401.229 449.777 413.726 462.274C426.223 474.771 446.484 474.771 458.981 462.274L662.627 258.627ZM0 268H640V204L0 204L0 268Z" fill="black"/>
@@ -134,13 +133,13 @@
 <div class="container-fluid process-container">
   <div class="row process-row-1 fadeIn">
     <div class="col p-0">
-      <h4>Strategy</h4>
+      <!-- <h4>Strategy</h4> -->
     </div>
   </div>
   <div class="row process-row-2 fadeIn">
     <div class="col">
-      <h1 class="process-row-header mb-4" mb-4>Reliability</h1>
-      <h1 class="process-row-header mb-4">Expertise</h1>
+      <!-- <h1 class="process-row-header mb-4" mb-4>Reliability</h1>
+      <h1 class="process-row-header mb-4">Expertise</h1> -->
       <h1 class="process-row-header">Leadership</h1>
     </div>
   </div>

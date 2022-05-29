@@ -31,7 +31,7 @@
           <?php
       }
       */ ?>
-      " href="/">Intentional Interpreting</a>
+       text-uppercase" href="/">TFITHP</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -49,11 +49,11 @@
         if ( is_front_page() ) {
         ?>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#organization">Organizations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#organization">Affiliations</a></li>
           <li class="nav-item"><a class="nav-link" href="/#contact">Rates</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#request" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Request Services
+            Services
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/notary-services">Notary Public Services</a>
@@ -65,11 +65,11 @@
         } else {
         ?>
           <li class="nav-item"><a class="nav-link" href="/#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="/#organization">Organizations</a></li>
+          <li class="nav-item"><a class="nav-link" href="/#organization">Affiliations</a></li>
           <li class="nav-item"><a class="nav-link" href="/#contact">Rates</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#request" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Request Services
+            Services
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/notary-services">Notary Public Services</a>

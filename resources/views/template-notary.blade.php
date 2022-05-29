@@ -9,7 +9,7 @@
 
     <div class="container page-landing-container">
             <div class="row page-landing-row">
-                <div class="col page-landing-col  mt-5 mb-5" style="background-image:url(@asset('images/0.jpg'));"></div>
+                <div class="col page-landing-col notary-service-bg mt-5 mb-5" style="background-image:url(@asset('images/notary_public_img.png'));"></div>
             </div>
     </div>
     <div class="container page-container">
