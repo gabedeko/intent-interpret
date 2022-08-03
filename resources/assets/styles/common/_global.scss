@@ -14,3 +14,17 @@ html {
   padding-left:0!important;
   padding-right:0!important;
 }
+
+a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color ease-in-out .3s;
+  &.gold-link {
+    color: $ii-gold!important;
+  }
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+    transition: color ease-in-out .3s;
+  }
+}

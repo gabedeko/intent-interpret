@@ -74,7 +74,7 @@
     </div>
     <div class="col-md professionalism-col fadeInDown">
       <img class="professionalism-img" src="@asset('images/professionalism/ii_prof_img_3.png')" alt="">
-      <h3 class="text-center mt-5">Up To Date</h3>
+      <h3 class="text-center mt-5">Bookings Available</h3>
     </div>
   </div>
   
@@ -106,7 +106,7 @@
   </div>
 </div>
 <div class="container-fluid parallax-container">
-  <div class="bg" style="background-image:url(@asset('images/1.jpg'))"></div>
+  <div class="bg" style="background-image:url(@asset('images/new_2.png'))"></div>
   <div class="row parallax-row p-5">
     <div class="exp-num fadeIn">02</div>
     <div class="exp-desc fadeIn">
@@ -125,22 +125,22 @@
         </svg>
       </a>
     </div>
-    <div class="col-md-6 community-right" style="background-image:url(@asset('images/2.jpg'))"></div>
+    <div class="col-md-6 community-right" style="background-image:url(@asset('images/new_1.jpg'))"></div>
     
   </div>
 </div>
 
 <div class="container-fluid process-container">
-  <div class="row process-row-1 fadeIn">
+  <!-- <div class="row process-row-1 fadeIn">
     <div class="col p-0">
-      <!-- <h4>Strategy</h4> -->
+      <h4>Strategy</h4>
     </div>
-  </div>
-  <div class="row process-row-2 fadeIn">
+  </div> -->
+  <div class="row process-row-2">
     <div class="col">
       <!-- <h1 class="process-row-header mb-4" mb-4>Reliability</h1>
       <h1 class="process-row-header mb-4">Expertise</h1> -->
-      <h1 class="process-row-header">Leadership</h1>
+      <h1 class="process-row-header fadeIn">Leadership</h1>
     </div>
   </div>
   <div class="row">

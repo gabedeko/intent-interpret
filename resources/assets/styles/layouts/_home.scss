@@ -165,7 +165,7 @@
       flex-direction: column;
       margin-right: 0;
       margin-left: 0;
-      background-color: rgba(0,0,0,0.4);
+      background-color: rgba(0,0,0,0.5);
       justify-content: space-around;
       color: #fff;
       //padding: 24px;
@@ -206,7 +206,7 @@
     .community-row {
         height: 100%;
         @media (max-width: 991.98px) {
-            background-image: url(../../images/2.jpg);
+            background-image: url(../../images/new_1.jpg);
             background-size: cover;
             background-position: 50% 50%;
             background-repeat: no-repeat;
@@ -253,7 +253,8 @@
         }
         .community-right {
             height: 100%;
-            background-size: cover;
+            //background-size: cover;
+            background-size: contain;
             background-position: 50% 50%;
             background-repeat: no-repeat;
             transition: background-size ease-in-out .3s;
@@ -282,7 +283,19 @@
         margin: 16px 0;
     }
     .process-row-2 {
+        background-image: url(../../images/new_0.png);
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        @media (min-width: 992px) {
+            min-height: 440px;
+        }
+        min-height: 40vh;
         .col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgba(0,0,0,.5);
             .process-row-header {
                 @media (min-width: 992px) {
                     font-size: 92px;

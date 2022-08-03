@@ -3,13 +3,13 @@
 }
 
 .community-btn {
-    transition: border ease-in-out .3s;
+    transition: border ease-in-out .3s, background-color ease-in-out .3s, color ease-in-out .3s;
     padding: 12px 8px 8px 8px;
     background-color: $ii-gold;
     border-radius: 16px;
     &:hover {
         text-decoration: none;
-        transition: background-color ease-in-out .3s;
+        transition: border ease-in-out .3s, background-color ease-in-out .3s, color ease-in-out .3s;
         background-color: #000;
     }
 }
