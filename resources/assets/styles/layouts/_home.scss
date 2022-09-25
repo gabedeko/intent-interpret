@@ -284,7 +284,8 @@
     }
     .process-row-2 {
         background-image: url(../../images/new_0.png);
-        background-size: cover;
+        //background-size: cover;
+        background-size: fit;
         background-position: 50% 50%;
         background-repeat: no-repeat;
         @media (min-width: 992px) {
@@ -295,7 +296,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: rgba(0,0,0,.5);
+            background-color: rgba(0,0,0,0.0);
             .process-row-header {
                 @media (min-width: 992px) {
                     font-size: 92px;

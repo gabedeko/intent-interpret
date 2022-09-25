@@ -106,7 +106,7 @@
   </div>
 </div>
 <div class="container-fluid parallax-container">
-  <div class="bg" style="background-image:url(@asset('images/new_2.png'))"></div>
+  <div class="bg" style="background-image:url(@asset('images/2.jpg'))"></div>
   <div class="row parallax-row p-5">
     <div class="exp-num fadeIn">02</div>
     <div class="exp-desc fadeIn">
@@ -140,7 +140,7 @@
     <div class="col">
       <!-- <h1 class="process-row-header mb-4" mb-4>Reliability</h1>
       <h1 class="process-row-header mb-4">Expertise</h1> -->
-      <h1 class="process-row-header fadeIn">Leadership</h1>
+      <!-- <h1 class="process-row-header fadeIn">Leadership</h1> -->
     </div>
   </div>
   <div class="row">
